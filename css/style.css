@@ -1,0 +1,118 @@
+body {
+  font-family: "ヒラギノ角ゴ ProN W3", "Yu Gothic Medium", "メイリオ";
+}
+
+#header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: black;
+  height: 100px;
+  position:fixed;
+  top:0;
+  left:0;
+}
+
+#header a{
+  color: white;
+}
+
+
+#header .head-menu ul {
+    list-style: none;
+}
+
+#header .head-menu ul li {
+  width: 140px;
+  text-align: center;
+  display: inline-block;
+}
+
+#main{
+  margin-top:100px;
+}
+
+#main  div  span {
+  font-style: italic;
+  font: 20px bold red;
+}
+
+#main .greeding{
+  background-image: url("../img/bg1.png");
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+#main h2{
+  margin-top: 0;
+}
+
+#main .jobkind{
+  display: flex;
+  justify-content: space-around;
+} @media(max-width:1024px){
+  #main .jobkind{
+    display: block;
+    justify-content: center;
+  }
+}
+
+#main .samples{
+  text-align: center;
+  background: linear-gradient(#FFFFFF, skyblue);
+  padding: 30px 0;
+}
+
+#main .samples .slider{
+  margin: 50px auto;
+  width:50%;
+}
+
+#main .samples .slider img{
+  width:50%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: #000;
+}
+
+#main .works{
+  background-image: url("../img/bg2.png");
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+#main .contact{
+  text-align: center;
+}
+
+#main .jobkind .kindbox{
+  text-align: center;
+  background-color: gainsboro;
+  border-radius: 10px;
+  width: 300px;
+  height: 300px;
+} @media(max-width:1024px){
+  #main .jobkind .kindbox{
+    display: flex;
+    width: 95%;
+    margin-bottom: 10px;
+  }
+}
+
+#main .jobkind .kindbox img{
+  width: 150px;
+  height: 150px;
+}
+
+#main .contactform{
+  margin: 0 auto;
+  width: 800px;
+  text-align: left
+}
